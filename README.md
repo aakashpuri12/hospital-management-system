@@ -1,11 +1,11 @@
-🏥 Hospital Management System      
+**🏥 Hospital Management System**      
 📋 Project Overview
 
 Hospital Management System is a full-stack web application designed to streamline hospital operations by digitizing patient, doctor, staff, and appointment management.
 This project integrates a Spring Boot backend with a modern HTML/CSS/JavaScript frontend, ensuring a seamless user experience and real-time data handling using a MySQL database.
 
-🚀 Features      
-👨‍⚕️ Doctor Management
+**🚀 Features**      
+👨‍⚕️ **Doctor Management**
 
 Add, edit, update, and delete doctor profiles
 
@@ -13,7 +13,7 @@ Fields include name, specialty, contact number, email, and experience years
 
 Integrated frontend form with prefill and backend synchronization
 
-🧑‍🤝‍🧑 Patient Management
+🧑‍🤝‍🧑 **Patient Management**
 
 Register new patients and manage existing records
 
@@ -23,13 +23,13 @@ Gender dropdown with auto-prefill functionality
 
 Real-time validation and updates
 
-🧑‍🍳 Staff Management
+🧑‍🍳 **Staff Management**
 
 Add and manage hospital staff details
 
 Assign departments and maintain records with CRUD operations
 
-📅 Appointment Scheduling
+📅 **Appointment Scheduling**
 
 Waiterless-style booking experience for hospital appointments
 
@@ -39,33 +39,28 @@ Date, time, and reason fields with backend MySQL connectivity
 
 Automatic update and delete options
 
-📊 Dashboard Overview
+📊 **Dashboard Overview**
 
 Interactive, user-friendly dashboard to manage doctors, patients, staff, and appointments
 
 Modern UI with responsive design
 
-🧩 Tech Stack
-Layer	Technology
-Frontend	HTML5, CSS3, JavaScript (Vanilla)
-Backend	Spring Boot (Java)
-Database	MySQL
-IDE Used	Eclipse for backend, VS Code for frontend
-API Communication	RESTful APIs (JSON)
-Deployment	Netlify (Frontend), Render/Railway (Backend recommended)
+**🧩 Tech Stack**    
+**Layer Technology**         
+Frontend    	-HTML5, CSS3, JavaScript (Vanilla)         
+Backend     	-Spring Boot (Java)         
+Database     	-MySQL         
+IDE Used     	-Eclipse for backend, VS Code for frontend         
+API Communication    	-RESTful APIs (JSON)             
 
-💾 Database Schema (MySQL)
-Tables Used:
 
-doctors
+💾 **Database Schema (MySQL) Tables Used:**     
+doctors     
+patients    
+staff    
+appointments    
 
-patients
-
-staff
-
-appointments
-
-Example SQL query:
+**Example SQL query:**
 ```bash
       SELECT * FROM appointments;
 ```
@@ -79,7 +74,7 @@ Example SQL query:
 | created_at           | TIMESTAMP    | Auto timestamp         |
 
 
-🖥️ How to Run the Project Locally
+🖥️ **How to Run the Project Locally**
 🔹 Backend (Spring Boot)
 
 Open the project in Eclipse or IntelliJ
@@ -92,6 +87,9 @@ spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 ```
+
+**ScreenShot**  
+
 
 <img width="1919" height="967" alt="Screenshot 2025-11-04 212619" src="https://github.com/user-attachments/assets/f223226c-4860-43e7-934b-a4fc40117d48" />
 
