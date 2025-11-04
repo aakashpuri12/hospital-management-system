@@ -47,7 +47,7 @@ Modern UI with responsive design
 
 **🧩 Tech Stack**    
 **Layer Technology**         
-Frontend    	-HTML5, CSS3, JavaScript (Vanilla)         
+Frontend    	-HTML5, CSS3, JavaScript          
 Backend     	-Spring Boot (Java)         
 Database     	-MySQL         
 IDE Used     	-Eclipse for backend, VS Code for frontend         
