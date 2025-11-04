@@ -1,10 +1,10 @@
-🏥 Hospital Management System
+🏥 Hospital Management System      
 📋 Project Overview
 
 Hospital Management System is a full-stack web application designed to streamline hospital operations by digitizing patient, doctor, staff, and appointment management.
 This project integrates a Spring Boot backend with a modern HTML/CSS/JavaScript frontend, ensuring a seamless user experience and real-time data handling using a MySQL database.
 
-🚀 Features
+🚀 Features      
 👨‍⚕️ Doctor Management
 
 Add, edit, update, and delete doctor profiles
@@ -92,16 +92,20 @@ spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 ```
-<img width="1919" height="967" alt="image" src="https://github.com/user-attachments/assets/2d4fc7ca-086a-46d3-90e5-51aced69a51a" />
+
+<img width="1919" height="967" alt="Screenshot 2025-11-04 212619" src="https://github.com/user-attachments/assets/f223226c-4860-43e7-934b-a4fc40117d48" />
+
+<img width="1910" height="911" alt="Screenshot 2025-11-04 211306" src="https://github.com/user-attachments/assets/8ca0418c-653c-436b-8611-9ef6b3e18722" />
+
+<img width="1919" height="699" alt="Screenshot 2025-11-04 212309" src="https://github.com/user-attachments/assets/7bb39bf7-c3eb-4a6f-b6c7-58fbefa3af24" />
+
+<img width="1919" height="772" alt="Screenshot 2025-11-04 212348" src="https://github.com/user-attachments/assets/848988b5-9200-4326-a6f7-64e7837341f2" />
+
+<img width="1919" height="864" alt="Screenshot 2025-11-04 212519" src="https://github.com/user-attachments/assets/12236d2b-833f-40c4-9c22-2bc89a5f318b" />  
 
 
-<img width="1910" height="911" alt="image" src="https://github.com/user-attachments/assets/0cd9cad5-3aa8-4071-9a3d-713852931f45" />
 
-<img width="1919" height="699" alt="image" src="https://github.com/user-attachments/assets/8e7d328f-1661-4dc8-b00f-8e68dd8aae43" />
 
-<img width="1919" height="772" alt="image" src="https://github.com/user-attachments/assets/d385173d-5cc8-4dcf-ad6d-7defa9448401" />
-
-<img width="1919" height="864" alt="image" src="https://github.com/user-attachments/assets/13db6537-1105-485f-86b7-b8262b047ce3" />
 
 
 
