@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reports - Smart Hospital</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/navbar.js"></script>
+  <script defer src="js/report.js"></script>
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <span class="logo">🏥 Smart Hospital</span>
+    </div>
+    <div class="navbar-right">
+      <span id="menuToggle" class="menu-toggle">☰</span>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="patients.html">Patients</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="report.html" class="active">Reports</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN SECTION ===== -->
+  <section class="main-section">
+    <h1>📊 Hospital Reports</h1>
+
+    <!-- ===== LIVE COUNTS ===== -->
+    <div class="report-grid">
+      <div class="report-card">
+        <h2>Total Patients</h2>
+        <p id="totalPatients">--</p>
+      </div>
+      <div class="report-card">
+        <h2>Total Doctors</h2>
+        <p id="totalDoctors">--</p>
+      </div>
+      <div class="report-card">
+        <h2>Total Staff</h2>
+        <p id="totalStaff">--</p>
+      </div>
+      <div class="report-card">
+        <h2>Total Appointments</h2>
+        <p id="totalAppointments">--</p>
+      </div>
+    </div>
+
+    <!-- ===== FILTER DROPDOWN ===== -->
+    <div class="report-filter">
+      <label for="reportType">Select Report Type:</label>
+      <select id="reportType" class="report-select">
+        <option value="all">All Modules</option>
+        <option value="patients">Patients</option>
+        <option value="doctors">Doctors</option>
+        <option value="staff">Staff</option>
+        <option value="appointments">Appointments</option>
+      </select>
+    </div>
+
+    <!-- ===== BUTTON GROUP ===== -->
+    <div class="btn-group">
+      <button id="generateReportBtn" class="add-btn">📊 Preview Report</button>
+      <button class="add-btn" onclick="window.location='dashboard.html'">🏠 Back to Dashboard</button>
+    </div>
+
+    <!-- ===== PREVIEW SECTION ===== -->
+    <div id="reportPreview" class="report-preview hidden">
+      <h2>📄 Report Preview</h2>
+      <div id="previewContent">Loading...</div>
+    </div>
+  </section>
+</body>
+</html>

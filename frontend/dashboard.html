@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospital Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/navbar.js"></script>
+  <script defer src="js/dashboard.js"></script>
+</head>
+<body>
+  <!-- 🌐 Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <span class="logo">🏥 Smart Hospital</span>
+    </div>
+    <div class="navbar-right">
+      <span id="menuToggle" class="menu-toggle">☰</span>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="patients.html">Patients</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="report.html">Reports</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="dashboard-container">
+    <h1>Hospital Management Dashboard</h1>
+    
+    <div class="card-container">
+      <div class="card" onclick="window.location='patients.html'">
+        <h3>Patients</h3>
+        <p>Manage all patient records and data.</p>
+        <p id="patientCount">Loading...</p>
+      </div>
+      
+      <div class="card" onclick="window.location='doctors.html'">
+        <h3>Doctors</h3>
+        <p>View and manage doctor details and specialties.</p>
+        <p id="doctorCount">Loading...</p>
+      </div>
+
+      <div class="card" onclick="window.location='staff.html'">
+        <h3>Staff</h3>
+        <p>View and manage all hospital staff members.</p>
+        <p id="staffCount">Loading...</p>
+      </div>
+
+      <div class="card" onclick="window.location='appointments.html'">
+        <h3>Appointments</h3>
+        <p>Schedule and manage patient appointments.</p>
+        <p id="appointmentCount">Loading...</p>
+      </div>
+    </div>
+
+    <div class="add-section">
+      <button class="add-btn" onclick="window.location='add-patient.html'">➕ Add New Patient</button>
+      <button class="add-btn" onclick="window.location='add-doctor.html'">➕ Add New Doctor</button>
+      <button class="add-btn" onclick="window.location='add-staff.html'">➕ Add New Staff</button>
+      <button class="add-btn" onclick="window.location='add-appointment.html'">➕ Schedule Appointment</button>
+    </div>
+  </section>
+</body>
+</html>

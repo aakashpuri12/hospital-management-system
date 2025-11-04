@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add / Edit Staff</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/navbar.js"></script>
+  <script defer src="js/add-staff.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left"><span class="logo">🏥 Smart Hospital</span></div>
+    <div class="navbar-right">
+      <span id="menuToggle" class="menu-toggle">☰</span>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="patients.html">Patients</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="report.html">Reports</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="form-container">
+    <h1 id="formTitle">Add Staff Member</h1>
+    <form id="staffForm" class="form-card">
+      <input type="hidden" id="staffId" />
+      <label>First Name:</label><input type="text" id="firstName" required />
+      <label>Last Name:</label><input type="text" id="lastName" />
+      <label>Role:</label><input type="text" id="role" required />
+      <label>Specialty:</label><input type="text" id="specialty" />
+      <label>Contact No:</label><input type="text" id="contactNo" required />
+      <label>Email:</label><input type="email" id="email" required />
+      <button type="submit" class="add-btn">💾 Save</button>
+      <button type="button" class="add-btn" onclick="window.location='staff.html'">↩ Back</button>
+    </form>
+  </section>
+</body>
+</html>

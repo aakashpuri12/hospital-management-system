@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add / Edit Appointment</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/navbar.js"></script>
+  <script defer src="js/add-appointment.js"></script>
+
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f9fafc;
+        margin: 0;
+        padding: 0;
+      }
+      .form-container {
+        width: 90%;
+        max-width: 600px;
+        background: #ffffff;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        margin: 50px auto;
+      }
+      h2 {
+        text-align: center;
+        color: #042d4c;
+        margin-bottom: 25px;
+        font-weight: 600;
+      }
+      input, select, textarea {
+        width: 100%;
+        padding: 10px 12px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 15px;
+        transition: all 0.3s ease;
+      }
+      input:focus, select:focus, textarea:focus {
+        border-color: #28a8de;
+        box-shadow: 0 0 5px rgba(40,168,222,0.3);
+        outline: none;
+      }
+      button {
+        background: #28a8de;
+        color: #fff;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 10px;
+        transition: background 0.3s ease;
+      }
+      button:hover {
+        background: #042d4c;
+      }
+      .add-btn {
+        background: linear-gradient(90deg, #42a5f5, #1e88e5);
+        color: #fff;
+        border: none;
+        padding: 10px 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 15px;
+        width: 300px;
+        transition: all 0.3s ease;
+      }
+    </style>
+    </head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left"><span class="logo">🏥 Smart Hospital</span></div>
+    <div class="navbar-right">
+      <span id="menuToggle" class="menu-toggle">☰</span>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="patients.html">Patients</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="report.html">Reports</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="main-section">
+    <div class="form-card">
+      <h2 id="formTitle">Schedule / Edit Appointment</h2>
+
+      <form id="appointmentForm">
+        <label>Patient</label>
+        <select id="patientSelect" required></select>
+
+        <label>Doctor</label>
+        <select id="doctorSelect" required></select>
+
+        <label>Appointment Date & Time</label>
+        <input type="datetime-local" id="appointmentDatetime" required />
+
+        <label>Reason / Notes</label>
+        <textarea id="reason" rows="3" placeholder="Enter reason or additional notes..."></textarea>
+
+        <button type="submit" class="add-btn">💾 Save Appointment</button>
+        <button class="add-btn" onclick="window.location.href='appointments.html'">↩ Back to Appointments</button>
+      </form>
+    </div>
+
+    <div class="page-buttons">
+      
+      <button class="add-btn" onclick="window.location.href='dashboard.html'">🏠 Back to Dashboard</button>
+    </div>
+  </section>
+</body>
+</html>

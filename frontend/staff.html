@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staff</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/navbar.js"></script>
+  <script defer src="js/staff.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left"><span class="logo">🏥 Smart Hospital</span></div>
+    <div class="navbar-right">
+      <span id="menuToggle" class="menu-toggle">☰</span>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="patients.html">Patients</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="report.html">Reports</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="main-section">
+    <h1>Staff Management</h1>
+    <div class="table-card">
+      <table id="staffTable">
+        <thead>
+          <tr>
+            <th>ID</th><th>First Name</th><th>Last Name</th>
+            <th>Role</th><th>Specialty</th>
+            <th>Contact</th><th>Email</th><th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="btn-group">
+      <button class="add-btn" onclick="window.location='add-staff.html'">➕ Add Staff</button>
+      <button class="add-btn" onclick="window.location='dashboard.html'">🏠 Back to Dashboard</button>
+    </div>
+  </section>
+</body>
+</html>
